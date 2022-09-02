@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/source/Github/Sistemas Digitais/neander/neander.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;D:/source/Github/INF01175_Sistemas_Digitais/T1_Neander/neander/neander.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

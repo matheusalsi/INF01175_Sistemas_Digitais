@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sun Jul 31 00:51:56 2022
+# Process ID: 28292
+# Log file: D:/source/Github/Sistemas Digitais/neander/planAhead_run_1/planAhead.log
+# Journal file: D:/source/Github/Sistemas Digitais/neander/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {D:/source/Github/Sistemas Digitais/neander/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1

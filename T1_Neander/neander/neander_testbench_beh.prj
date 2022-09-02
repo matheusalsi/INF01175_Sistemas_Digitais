@@ -1,0 +1,3 @@
+vhdl work "ipcore_dir/memory.vhd"
+vhdl work "neander.vhd"
+vhdl work "neander_testbench.vhd"

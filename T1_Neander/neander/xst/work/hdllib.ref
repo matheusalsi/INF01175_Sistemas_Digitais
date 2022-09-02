@@ -1,0 +1,4 @@
+EN neander NULL "D:/source/Github/Sistemas Digitais/neander/neander.vhd" sub00/vhpl02 1661136272
+EN memory NULL "D:/source/Github/Sistemas Digitais/neander/ipcore_dir/memory.vhd" sub00/vhpl00 1661136270
+AR memory memory_a "D:/source/Github/Sistemas Digitais/neander/ipcore_dir/memory.vhd" sub00/vhpl01 1661136271
+AR neander behavioral "D:/source/Github/Sistemas Digitais/neander/neander.vhd" sub00/vhpl03 1661136273

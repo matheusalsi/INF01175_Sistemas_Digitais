@@ -1,0 +1,25 @@
+ISim log file
+Running: D:\source\Github\Sistemas Digitais\neander\neander_testbench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/source/Github/Sistemas Digitais/neander/neander_testbench_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 0 ps, Instance /neander_testbench/uut/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 810 ns(1): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/neander_testbench/uut/mem/U0/native_mem_module/mem_module/).
+# restart
+# run 2.50us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 810 ns(1): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/neander_testbench/uut/mem/U0/native_mem_module/mem_module/).
+# restart
+# run 3.50us
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+at 810 ns(1): Note: Block Memory Generator CORE Generator module is using a behavioral model FOR simulation which will not precisely model memory collision behavior. (/neander_testbench/uut/mem/U0/native_mem_module/mem_module/).

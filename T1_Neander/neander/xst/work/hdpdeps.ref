@@ -1,0 +1,16 @@
+V3 7
+FL "D:/source/Github/Sistemas Digitais/neander/ipcore_dir/memory.vhd" 2022/08/21.23:43:54 P.20131013
+EN work/memory 1661136270 \
+      FL "D:/source/Github/Sistemas Digitais/neander/ipcore_dir/memory.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/memory/memory_a 1661136271 \
+      FL "D:/source/Github/Sistemas Digitais/neander/ipcore_dir/memory.vhd" \
+      EN work/memory 1661136270
+FL "D:/source/Github/Sistemas Digitais/neander/neander.vhd" 2022/08/21.22:48:18 P.20131013
+EN work/neander 1661136272 \
+      FL "D:/source/Github/Sistemas Digitais/neander/neander.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB ieee/std_logic_arith 1381692177
+AR work/neander/Behavioral 1661136273 \
+      FL "D:/source/Github/Sistemas Digitais/neander/neander.vhd" EN work/neander 1661136272 \
+      CP memory

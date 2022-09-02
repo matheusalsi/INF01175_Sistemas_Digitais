@@ -1,0 +1,9 @@
+[Inputs]
+clk
+rst
+[Outputs]
+Z
+N
+=AC[7:0]=
+=PC[7:0]=
+[BiDir]

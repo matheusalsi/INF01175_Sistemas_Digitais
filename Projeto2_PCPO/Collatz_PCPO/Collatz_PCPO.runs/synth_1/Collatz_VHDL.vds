@@ -1,0 +1,286 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Oct  9 23:39:38 2022
+# Process ID: 75732
+# Current directory: D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.runs/synth_1
+# Command line: vivado.exe -log Collatz_VHDL.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Collatz_VHDL.tcl
+# Log file: D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.runs/synth_1/Collatz_VHDL.vds
+# Journal file: D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Collatz_VHDL.tcl -notrace
+Command: synth_design -top Collatz_VHDL -part xc7vx485tffg1157-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7vx485t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 75084 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 565.371 ; gain = 186.004
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Collatz_VHDL' [D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.srcs/sources_1/new/Collatz_VHDL.vhd:23]
+WARNING: [Synth 8-614] signal 'OutputRA' is read in the process but is not in the sensitivity list [D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.srcs/sources_1/new/Collatz_VHDL.vhd:53]
+WARNING: [Synth 8-614] signal 'input_x' is read in the process but is not in the sensitivity list [D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.srcs/sources_1/new/Collatz_VHDL.vhd:53]
+INFO: [Synth 8-226] default block is never used [D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.srcs/sources_1/new/Collatz_VHDL.vhd:167]
+INFO: [Synth 8-256] done synthesizing module 'Collatz_VHDL' (1#1) [D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.srcs/sources_1/new/Collatz_VHDL.vhd:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 628.926 ; gain = 249.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 628.926 ; gain = 249.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7vx485tffg1157-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 628.926 ; gain = 249.559
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+WARNING: [Synth 8-327] inferring latch for variable 'done_reg' [D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.srcs/sources_1/new/Collatz_VHDL.vhd:177]
+WARNING: [Synth 8-327] inferring latch for variable 'LDA_RA_reg' [D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.srcs/sources_1/new/Collatz_VHDL.vhd:71]
+WARNING: [Synth 8-327] inferring latch for variable 'RST_RA_reg' [D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.srcs/sources_1/new/Collatz_VHDL.vhd:92]
+WARNING: [Synth 8-327] inferring latch for variable 'mux_reg' [D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.srcs/sources_1/new/Collatz_VHDL.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'INC_COUNT_reg' [D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.srcs/sources_1/new/Collatz_VHDL.vhd:120]
+WARNING: [Synth 8-327] inferring latch for variable 'SHR_RA_reg' [D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.srcs/sources_1/new/Collatz_VHDL.vhd:72]
+WARNING: [Synth 8-327] inferring latch for variable 'Sel_reg' [D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.srcs/sources_1/new/Collatz_VHDL.vhd:176]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 628.926 ; gain = 249.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Collatz_VHDL 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 5     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2800 (col length:140)
+BRAMs: 2060 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\ra_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RST_RA_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mux_reg[15] )
+INFO: [Synth 8-3886] merging instance 'mux_reg[15]' (LD) to 'mux_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mux_reg[14] )
+INFO: [Synth 8-3886] merging instance 'mux_reg[14]' (LD) to 'mux_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mux_reg[13] )
+INFO: [Synth 8-3886] merging instance 'mux_reg[13]' (LD) to 'mux_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mux_reg[12] )
+INFO: [Synth 8-3886] merging instance 'mux_reg[12]' (LD) to 'mux_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mux_reg[11] )
+INFO: [Synth 8-3886] merging instance 'mux_reg[11]' (LD) to 'mux_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\mux_reg[10] )
+WARNING: [Synth 8-3332] Sequential element (RST_RA_reg) is unused and will be removed from module Collatz_VHDL.
+WARNING: [Synth 8-3332] Sequential element (mux_reg[10]) is unused and will be removed from module Collatz_VHDL.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 939.211 ; gain = 559.844
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 940.668 ; gain = 561.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 940.668 ; gain = 561.301
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 941.660 ; gain = 562.293
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 941.660 ; gain = 562.293
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 941.660 ; gain = 562.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 941.660 ; gain = 562.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 941.660 ; gain = 562.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 941.660 ; gain = 562.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |     6|
+|3     |LUT1   |     2|
+|4     |LUT2   |    14|
+|5     |LUT3   |    30|
+|6     |LUT4   |     4|
+|7     |LUT5   |    15|
+|8     |LUT6   |    12|
+|9     |FDCE   |    31|
+|10    |LD     |     7|
+|11    |IBUF   |    11|
+|12    |OBUF   |    25|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   159|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 941.660 ; gain = 562.293
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 941.660 ; gain = 562.293
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 941.660 ; gain = 562.293
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 2 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1070.605 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  LD => LDCE: 5 instances
+  LD => LDCE (inverted pins: G): 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1070.605 ; gain = 715.125
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1070.605 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.runs/synth_1/Collatz_VHDL.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Collatz_VHDL_utilization_synth.rpt -pb Collatz_VHDL_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Oct  9 23:40:05 2022...

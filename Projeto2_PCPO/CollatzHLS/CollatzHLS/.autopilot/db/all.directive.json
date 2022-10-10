@@ -1,0 +1,17 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "Collatz",
+          "label": "loop",
+          "functionLabel": "",
+          "pragma": {"name": "LOOP_TRIPCOUNT"}
+        },
+        {
+          "functionName": "Collatz",
+          "label": "loop",
+          "functionLabel": "",
+          "pragma": {"name": "LOOP_FLATTEN"}
+        }
+      ]
+    }]}

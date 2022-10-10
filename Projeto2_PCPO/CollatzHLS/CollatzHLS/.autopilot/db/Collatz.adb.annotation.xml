@@ -1,0 +1,12 @@
+<annotationInfo>
+<annotationInfo>
+<item  id="11" filename="CollatzHLS/CollatzC/Collatz.cpp" linenumber="10" name="icmp_ln10" contextFuncName="Collatz" moduleName="Collatz" rtlName="icmp_ln10_fu_65_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="13" fileDirectory="D:\source\Github\INF01175_Sistemas_Digitais\Projeto2_PCPO"><\/item>
+<item  id="15" filename="CollatzHLS/CollatzC/Collatz.cpp" linenumber="10" name="trunc_ln10" contextFuncName="Collatz" moduleName="Collatz" rtlName="trunc_ln10_fu_71_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="D:\source\Github\INF01175_Sistemas_Digitais\Projeto2_PCPO"><\/item>
+<item  id="17" filename="CollatzHLS/CollatzC/Collatz.cpp" linenumber="12" name="aux" contextFuncName="Collatz" moduleName="Collatz" rtlName="aux_fu_75_p4" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="D:\source\Github\INF01175_Sistemas_Digitais\Projeto2_PCPO"><\/item>
+<item  id="18" filename="CollatzHLS/CollatzC/Collatz.cpp" linenumber="12" name="aux_1" contextFuncName="Collatz" moduleName="Collatz" rtlName="aux_1_fu_85_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="D:\source\Github\INF01175_Sistemas_Digitais\Projeto2_PCPO"><\/item>
+<item  id="19" filename="CollatzHLS/CollatzC/Collatz.cpp" linenumber="14" name="shl_ln14" contextFuncName="Collatz" moduleName="Collatz" rtlName="shl_ln14_fu_89_p2" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="D:\source\Github\INF01175_Sistemas_Digitais\Projeto2_PCPO"><\/item>
+<item  id="20" filename="CollatzHLS/CollatzC/Collatz.cpp" linenumber="14" name="sub_ln14" contextFuncName="Collatz" moduleName="Collatz" rtlName="sub_ln14_fu_95_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="16" fileDirectory="D:\source\Github\INF01175_Sistemas_Digitais\Projeto2_PCPO"><\/item>
+<item  id="21" filename="CollatzHLS/CollatzC/Collatz.cpp" linenumber="14" name="aux_2" contextFuncName="Collatz" moduleName="Collatz" rtlName="aux_2_fu_101_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="16" fileDirectory="D:\source\Github\INF01175_Sistemas_Digitais\Projeto2_PCPO"><\/item>
+<item  id="22" filename="CollatzHLS/CollatzC/Collatz.cpp" linenumber="11" name="aux_4" contextFuncName="Collatz" moduleName="Collatz" rtlName="aux_4_fu_107_p3" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="16" fileDirectory="D:\source\Github\INF01175_Sistemas_Digitais\Projeto2_PCPO"><\/item>
+<\/annotationInfo>
+</annotationInfo>

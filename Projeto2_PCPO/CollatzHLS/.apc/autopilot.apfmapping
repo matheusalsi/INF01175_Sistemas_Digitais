@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="Collatz.cpp" path="D:\source\Github\INF01175_Sistemas_Digitais\Projeto2_PCPO\CollatzHLS\CollatzC\Collatz.cpp"/>
+    <originFiles name="Collatz.h" path="D:\source\Github\INF01175_Sistemas_Digitais\Projeto2_PCPO\CollatzHLS\CollatzC\Collatz.h"/>
+  </source>
+  <testbench>
+    <originFiles name="Collatztb.cpp" path="D:\source\Github\INF01175_Sistemas_Digitais\Projeto2_PCPO\CollatzHLS\CollatzC\Collatztb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

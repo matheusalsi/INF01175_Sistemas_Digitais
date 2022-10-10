@@ -1,0 +1,141 @@
+
+
+================================================================
+== Vivado HLS Report for 'Collatz'
+================================================================
+* Date:           Sun Oct  9 18:49:40 2022
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        CollatzHLS
+* Solution:       CollatzHLS
+* Product family: virtex7
+* Target device:  xc7vx485t-ffg1157-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.087|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   28|   28|   28|   28|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+        |- loop    |   27|   27|         1|          -|          -|    27|    no    |
+        +----------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.18>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %agg_result_steps), !map !7"   --->   Operation 3 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %agg_result_greatest), !map !13"   --->   Operation 4 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8 %x), !map !17"   --->   Operation 5 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @Collatz_str) nounwind"   --->   Operation 6 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (1.18ns)   --->   "br label %1" [CollatzHLS/CollatzC/Collatz.cpp:10]   --->   Operation 7 'br' <Predicate = true> <Delay = 1.18>
+
+State 2 <SV = 1> <Delay = 3.08>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%aux_0 = phi i16 [ 65, %0 ], [ %aux_4, %loop ]"   --->   Operation 8 'phi' 'aux_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (1.42ns)   --->   "%icmp_ln10 = icmp eq i16 %aux_0, 1" [CollatzHLS/CollatzC/Collatz.cpp:10]   --->   Operation 9 'icmp' 'icmp_ln10' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 27, i64 27, i64 27)"   --->   Operation 10 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "br i1 %icmp_ln10, label %2, label %loop" [CollatzHLS/CollatzC/Collatz.cpp:10]   --->   Operation 11 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln10 = trunc i16 %aux_0 to i1" [CollatzHLS/CollatzC/Collatz.cpp:10]   --->   Operation 12 'trunc' 'trunc_ln10' <Predicate = (!icmp_ln10)> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([5 x i8]* @p_str) nounwind" [CollatzHLS/CollatzC/Collatz.cpp:10]   --->   Operation 13 'specloopname' <Predicate = (!icmp_ln10)> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%aux = call i15 @_ssdm_op_PartSelect.i15.i16.i32.i32(i16 %aux_0, i32 1, i32 15)" [CollatzHLS/CollatzC/Collatz.cpp:12]   --->   Operation 14 'partselect' 'aux' <Predicate = (!icmp_ln10)> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%aux_1 = zext i15 %aux to i16" [CollatzHLS/CollatzC/Collatz.cpp:12]   --->   Operation 15 'zext' 'aux_1' <Predicate = (!icmp_ln10)> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%shl_ln14 = shl i16 %aux_0, 2" [CollatzHLS/CollatzC/Collatz.cpp:14]   --->   Operation 16 'shl' 'shl_ln14' <Predicate = (!icmp_ln10)> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln14 = sub i16 %shl_ln14, %aux_0" [CollatzHLS/CollatzC/Collatz.cpp:14]   --->   Operation 17 'sub' 'sub_ln14' <Predicate = (!icmp_ln10)> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.27> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 18 [1/1] (2.54ns) (root node of TernaryAdder)   --->   "%aux_2 = add i16 1, %sub_ln14" [CollatzHLS/CollatzC/Collatz.cpp:14]   --->   Operation 18 'add' 'aux_2' <Predicate = (!icmp_ln10)> <Delay = 2.54> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.27> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_2 : Operation 19 [1/1] (0.54ns)   --->   "%aux_4 = select i1 %trunc_ln10, i16 %aux_2, i16 %aux_1" [CollatzHLS/CollatzC/Collatz.cpp:11]   --->   Operation 19 'select' 'aux_4' <Predicate = (!icmp_ln10)> <Delay = 0.54> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.54> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "br label %1" [CollatzHLS/CollatzC/Collatz.cpp:10]   --->   Operation 20 'br' <Predicate = (!icmp_ln10)> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i8P(i8* %agg_result_steps, i8 -60)" [CollatzHLS/CollatzC/Collatz.cpp:21]   --->   Operation 21 'write' <Predicate = (icmp_ln10)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i8P(i8* %agg_result_greatest, i8 27)" [CollatzHLS/CollatzC/Collatz.cpp:21]   --->   Operation 22 'write' <Predicate = (icmp_ln10)> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "ret void" [CollatzHLS/CollatzC/Collatz.cpp:22]   --->   Operation 23 'ret' <Predicate = (icmp_ln10)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.18ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('aux') with incoming values : ('aux', CollatzHLS/CollatzC/Collatz.cpp:11) [10]  (1.18 ns)
+
+ <State 2>: 3.09ns
+The critical path consists of the following:
+	'phi' operation ('aux') with incoming values : ('aux', CollatzHLS/CollatzC/Collatz.cpp:11) [10]  (0 ns)
+	'sub' operation ('sub_ln14', CollatzHLS/CollatzC/Collatz.cpp:14) [20]  (0 ns)
+	'add' operation ('aux', CollatzHLS/CollatzC/Collatz.cpp:14) [21]  (2.54 ns)
+	'select' operation ('aux', CollatzHLS/CollatzC/Collatz.cpp:11) [22]  (0.547 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Collatz_PCPO.srcs/sources_1/new/Collatz_VHDL.vhd" \
+"../../../../Collatz_PCPO.srcs/sim_1/new/Collatz_tb.vhd" \
+
+# Do not sort compile order
+nosort

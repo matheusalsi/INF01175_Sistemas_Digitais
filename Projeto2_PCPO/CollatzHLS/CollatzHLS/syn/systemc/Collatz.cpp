@@ -19,10 +19,10 @@ const sc_lv<2> Collatz::ap_ST_fsm_state2 = "10";
 const sc_lv<32> Collatz::ap_const_lv32_0 = "00000000000000000000000000000000";
 const sc_lv<32> Collatz::ap_const_lv32_1 = "1";
 const sc_lv<1> Collatz::ap_const_lv1_0 = "0";
-const sc_lv<16> Collatz::ap_const_lv16_41 = "1000001";
-const sc_lv<8> Collatz::ap_const_lv8_C4 = "11000100";
+const sc_lv<16> Collatz::ap_const_lv16_3 = "11";
+const sc_lv<8> Collatz::ap_const_lv8_10 = "10000";
 const sc_lv<1> Collatz::ap_const_lv1_1 = "1";
-const sc_lv<8> Collatz::ap_const_lv8_1B = "11011";
+const sc_lv<8> Collatz::ap_const_lv8_7 = "111";
 const sc_lv<16> Collatz::ap_const_lv16_1 = "1";
 const sc_lv<32> Collatz::ap_const_lv32_F = "1111";
 const sc_lv<16> Collatz::ap_const_lv16_2 = "10";
@@ -169,12 +169,12 @@ void Collatz::thread_ap_clk_no_reset_() {
         aux_0_reg_54 = aux_4_fu_107_p3.read();
     } else if ((esl_seteq<1,1,1>(ap_const_logic_1, ap_CS_fsm_state1.read()) && 
                 esl_seteq<1,1,1>(ap_start.read(), ap_const_logic_1))) {
-        aux_0_reg_54 = ap_const_lv16_41;
+        aux_0_reg_54 = ap_const_lv16_3;
     }
 }
 
 void Collatz::thread_agg_result_greatest() {
-    agg_result_greatest = ap_const_lv8_1B;
+    agg_result_greatest = ap_const_lv8_7;
 }
 
 void Collatz::thread_agg_result_greatest_ap_vld() {
@@ -187,7 +187,7 @@ void Collatz::thread_agg_result_greatest_ap_vld() {
 }
 
 void Collatz::thread_agg_result_steps() {
-    agg_result_steps = ap_const_lv8_C4;
+    agg_result_steps = ap_const_lv8_10;
 }
 
 void Collatz::thread_agg_result_steps_ap_vld() {

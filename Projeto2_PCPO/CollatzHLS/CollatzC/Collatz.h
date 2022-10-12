@@ -1,6 +1,6 @@
 #ifndef __COLLATZ_H__
 #define __COLLATZ_H__
-#define input 321
+#define input 3
 
 
 typedef unsigned char Uint8; //8bits

@@ -1,7 +1,3 @@
--- Testbench automatically generated online
--- at https://vhdl.lapinoo.net
--- Generation date : 10.10.2022 14:56:07 UTC
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -14,7 +10,7 @@ architecture tb of tb_Collatz_VHDL is
         port (start    : in std_logic;
               rst      : in std_logic;
               clk      : in std_logic;
-              input_x  : in std_logic_vector (7 downto 0);
+              inputX   : in std_logic_vector (7 downto 0);
               done     : out std_logic;
               greatest : out std_logic_vector (15 downto 0);
               steps    : out std_logic_vector (7 downto 0));
@@ -23,12 +19,12 @@ architecture tb of tb_Collatz_VHDL is
     signal start    : std_logic;
     signal rst      : std_logic;
     signal clk      : std_logic;
-    signal input_x  : std_logic_vector (7 downto 0);
+    signal inputX   : std_logic_vector (7 downto 0);
     signal done     : std_logic;
     signal greatest : std_logic_vector (15 downto 0);
     signal steps    : std_logic_vector (7 downto 0);
 
-    constant TbPeriod : time := 1000 ns; -- EDIT Put right period here
+    constant TbPeriod : time := 10 ns; -- EDIT Put right period here
     signal TbClock : std_logic := '0';
     signal TbSimEnded : std_logic := '0';
 
@@ -38,7 +34,7 @@ begin
     port map (start    => start,
               rst      => rst,
               clk      => clk,
-              input_x  => input_x,
+              inputX   => inputX,
               done     => done,
               greatest => greatest,
               steps    => steps);
@@ -53,7 +49,7 @@ begin
     begin
         -- EDIT Adapt initialization as needed
         start <= '0';
-        input_x <= (others => '0');
+        inputX <= (others => '0');
 
         -- Reset generation
         -- EDIT: Check that rst is really your reset signal
@@ -63,7 +59,15 @@ begin
         wait for 100 ns;
 
         -- EDIT Add stimuli here
-        wait for 100 * TbPeriod;
+        start <= '1';
+        --inputX <= "00000000"; --0
+        --inputX <= "00000001"; --1
+        inputX <= "00000011"; --3
+        --inputX <= "00000100"; --4
+        --inputX <= "10000001"; --129
+        --inputX <= "11111110"; --254
+        --inputX <= "11111111"; --255
+        wait for 450 * TbPeriod;
 
         -- Stop the clock and hence terminate the simulation
         TbSimEnded <= '1';
@@ -71,8 +75,6 @@ begin
     end process;
 
 end tb;
-
--- Configuration block below is required by some simulators. Usually no need to edit.
 
 configuration cfg_tb_Collatz_VHDL of tb_Collatz_VHDL is
     for tb

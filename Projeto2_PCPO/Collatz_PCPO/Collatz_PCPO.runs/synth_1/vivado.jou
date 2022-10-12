@@ -2,8 +2,8 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Oct  9 23:39:38 2022
-# Process ID: 75732
+# Start of session at: Tue Oct 11 07:24:38 2022
+# Process ID: 67068
 # Current directory: D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.runs/synth_1
 # Command line: vivado.exe -log Collatz_VHDL.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Collatz_VHDL.tcl
 # Log file: D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.runs/synth_1/Collatz_VHDL.vds

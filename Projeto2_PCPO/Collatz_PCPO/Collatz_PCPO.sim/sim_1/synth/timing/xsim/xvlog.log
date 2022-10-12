@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/Collatz_PCPO/Collatz_PCPO.sim/sim_1/synth/timing/xsim/tb_Collatz_VHDL_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Collatz_VHDL
+INFO: [VRFC 10-311] analyzing module glbl

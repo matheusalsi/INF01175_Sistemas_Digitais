@@ -169,17 +169,17 @@ Output Collatz(Uint8 x);
 # 2 "CollatzHLS/CollatzC/Collatz.cpp" 2
 
 Output Collatz(Uint8 x){
- x = (Uint8)321;
+ x = (Uint8)3;
  Uint16 aux = (Uint16)x;
  Uint16 greatest = (Uint16)x;
  Uint8 steps;
 
  if (aux > (Uint16)0){
-  loop: for(steps = (Uint8)0;aux != (Uint16)1; steps++){
+  loop: for(steps = (Uint8)0; aux != (Uint16)1; steps++){
 _ssdm_SpecLoopFlatten(0, "");
 # 10 "CollatzHLS/CollatzC/Collatz.cpp"
 
-_ssdm_op_SpecLoopTripCount(0, 0, 0, "");
+_ssdm_SpecLoopMerge(0, "");
 # 10 "CollatzHLS/CollatzC/Collatz.cpp"
 
    if (aux % (Uint16)2 == 0){

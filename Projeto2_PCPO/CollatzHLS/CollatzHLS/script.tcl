@@ -5,9 +5,9 @@
 ############################################################
 open_project CollatzHLS
 set_top Collatz
-add_files CollatzHLS/CollatzC/Collatz.cpp
 add_files CollatzHLS/CollatzC/Collatz.h
-add_files -tb CollatzHLS/CollatzC/Collatztb.cpp
+add_files CollatzHLS/CollatzC/Collatz.cpp
+add_files -tb CollatzHLS/CollatzC/Collatztb.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "CollatzHLS"
 set_part {xc7vx485t-ffg1157-1}
 create_clock -period 10 -name default

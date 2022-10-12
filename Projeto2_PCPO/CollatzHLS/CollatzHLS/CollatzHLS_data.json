@@ -14,12 +14,12 @@
   },
   "HlsSolution": {
     "DirectiveTcl": [
-      "set_directive_loop_tripcount Collatz\/loop ",
-      "set_directive_loop_flatten Collatz\/loop "
+      "set_directive_loop_flatten Collatz\/loop ",
+      "set_directive_loop_merge Collatz\/loop "
     ],
     "DirectiveInfo": [
-      "loop_tripcount Collatz\/loop {{tripcount positionBooleanCmd}} {}",
-      "loop_flatten Collatz\/loop {{flatten positionBooleanCmd}} {}"
+      "loop_flatten Collatz\/loop {{flatten positionBooleanCmd}} {}",
+      "loop_merge Collatz\/loop {{merge positionBooleanCmd}} {}"
     ]
   },
   "Args": {"x": {
@@ -55,7 +55,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "28",
+    "Latency": "8",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -200,10 +200,10 @@
       }},
     "Metrics": {"Collatz": {
         "Latency": {
-          "LatencyBest": "28",
-          "LatencyAvg": "28",
-          "LatencyWorst": "28",
-          "PipelineII": "29",
+          "LatencyBest": "8",
+          "LatencyAvg": "8",
+          "LatencyWorst": "8",
+          "PipelineII": "9",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -214,8 +214,8 @@
         },
         "Loops": [{
             "Name": "loop",
-            "TripCount": "27",
-            "Latency": "27",
+            "TripCount": "7",
+            "Latency": "7",
             "PipelineII": "",
             "PipelineDepth": "1"
           }],
@@ -238,7 +238,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2022-10-09 18:49:41 -0300",
+    "Time": "2022-10-11 08:04:43 -0300",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

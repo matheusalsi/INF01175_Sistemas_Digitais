@@ -59,10 +59,10 @@ struct Collatz : public sc_module {
     static const sc_lv<32> ap_const_lv32_0;
     static const sc_lv<32> ap_const_lv32_1;
     static const sc_lv<1> ap_const_lv1_0;
-    static const sc_lv<16> ap_const_lv16_41;
-    static const sc_lv<8> ap_const_lv8_C4;
+    static const sc_lv<16> ap_const_lv16_3;
+    static const sc_lv<8> ap_const_lv8_10;
     static const sc_lv<1> ap_const_lv1_1;
-    static const sc_lv<8> ap_const_lv8_1B;
+    static const sc_lv<8> ap_const_lv8_7;
     static const sc_lv<16> ap_const_lv16_1;
     static const sc_lv<32> ap_const_lv32_F;
     static const sc_lv<16> ap_const_lv16_2;

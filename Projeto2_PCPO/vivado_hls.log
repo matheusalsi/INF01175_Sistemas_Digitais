@@ -1,10 +1,10 @@
 INFO: [HLS 200-10] Running 'D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'Matheus Almeida' on host 'desktop-51hclkd' (Windows NT_amd64 version 6.2) on Sun Oct 09 18:49:31 -0300 2022
+INFO: [HLS 200-10] For user 'Matheus Almeida' on host 'desktop-51hclkd' (Windows NT_amd64 version 6.2) on Tue Oct 11 08:04:36 -0300 2022
 INFO: [HLS 200-10] In directory 'D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO'
 Sourcing Tcl script 'D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/CollatzHLS/CollatzHLS/csynth.tcl'
 INFO: [HLS 200-10] Opening project 'D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/CollatzHLS'.
-INFO: [HLS 200-10] Adding design file 'CollatzHLS/CollatzC/Collatz.cpp' to the project
 INFO: [HLS 200-10] Adding design file 'CollatzHLS/CollatzC/Collatz.h' to the project
+INFO: [HLS 200-10] Adding design file 'CollatzHLS/CollatzC/Collatz.cpp' to the project
 INFO: [HLS 200-10] Adding test bench file 'CollatzHLS/CollatzC/Collatztb.cpp' to the project
 INFO: [HLS 200-10] Opening solution 'D:/source/Github/INF01175_Sistemas_Digitais/Projeto2_PCPO/CollatzHLS/CollatzHLS'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
@@ -13,17 +13,15 @@ WARNING: [HLS 200-40] Cannot find library 'xilinx/Virtex-7/Virtex-7'.
 INFO: [HLS 200-10] Setting target device to 'xc7vx485t-ffg1157-1'
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
 INFO: [HLS 200-10] Analyzing design file 'CollatzHLS/CollatzC/Collatz.cpp' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 184.461 ; gain = 93.031
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 184.461 ; gain = 93.031
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 184.430 ; gain = 94.594
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 184.430 ; gain = 94.594
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 184.461 ; gain = 93.031
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 184.430 ; gain = 94.594
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 184.461 ; gain = 93.031
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (CollatzHLS/CollatzC/Collatz.cpp:10:57) to (CollatzHLS/CollatzC/Collatz.cpp:10:48) in function 'Collatz'... converting 4 basic blocks.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 184.461 ; gain = 93.031
-WARNING: [XFORM 203-561] Updating loop upper bound from 0 to 27 for loop 'loop' (CollatzHLS/CollatzC/Collatz.cpp:11:1) in function 'Collatz'.
-WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 27 for loop 'loop' (CollatzHLS/CollatzC/Collatz.cpp:11:1) in function 'Collatz'.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 184.461 ; gain = 93.031
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 184.430 ; gain = 94.594
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (CollatzHLS/CollatzC/Collatz.cpp:10:58) to (CollatzHLS/CollatzC/Collatz.cpp:10:49) in function 'Collatz'... converting 4 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 184.430 ; gain = 94.594
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 184.430 ; gain = 94.594
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'Collatz' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -31,14 +29,14 @@ INFO: [HLS 200-42] -- Implementing module 'Collatz'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 8.691 seconds; current allocated memory: 99.551 MB.
+INFO: [HLS 200-111]  Elapsed time: 6.484 seconds; current allocated memory: 99.534 MB.
 INFO: [HLS 200-434] Only 0 loops out of a total 1 loops have been pipelined in this design.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.054 seconds; current allocated memory: 99.799 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.043 seconds; current allocated memory: 99.766 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'Collatz' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -49,8 +47,8 @@ INFO: [RTGEN 206-500] Setting interface mode on function 'Collatz' to 'ap_ctrl_h
 WARNING: [RTGEN 206-101] Port 'Collatz/x' has no fanin or fanout and is left dangling.
                Please use C simulation to confirm this function argument can be read from or written to.
 INFO: [RTGEN 206-100] Finished creating RTL model for 'Collatz'.
-INFO: [HLS 200-111]  Elapsed time: 0.078 seconds; current allocated memory: 99.980 MB.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 184.461 ; gain = 93.031
+INFO: [HLS 200-111]  Elapsed time: 0.047 seconds; current allocated memory: 99.963 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 184.430 ; gain = 94.594
 INFO: [VHDL 208-304] Generating VHDL RTL for Collatz.
 INFO: [VLOG 209-307] Generating Verilog RTL for Collatz.
-INFO: [HLS 200-112] Total elapsed time: 9.534 seconds; peak allocated memory: 99.980 MB.
+INFO: [HLS 200-112] Total elapsed time: 7.212 seconds; peak allocated memory: 99.963 MB.

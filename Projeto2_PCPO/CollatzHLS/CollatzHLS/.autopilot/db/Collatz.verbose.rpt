@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'Collatz'
 ================================================================
-* Date:           Sun Oct  9 18:49:40 2022
+* Date:           Tue Oct 11 08:04:42 2022
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        CollatzHLS
@@ -29,7 +29,7 @@
     |  Latency  |  Interval | Pipeline|
     | min | max | min | max |   Type  |
     +-----+-----+-----+-----+---------+
-    |   28|   28|   28|   28|   none  |
+    |    8|    8|    8|    8|   none  |
     +-----+-----+-----+-----+---------+
 
     + Detail: 
@@ -41,7 +41,7 @@
         |          |  Latency  | Iteration|  Initiation Interval  | Trip |          |
         | Loop Name| min | max |  Latency |  achieved |   target  | Count| Pipelined|
         +----------+-----+-----+----------+-----------+-----------+------+----------+
-        |- loop    |   27|   27|         1|          -|          -|    27|    no    |
+        |- loop    |    7|    7|         1|          -|          -|     7|    no    |
         +----------+-----+-----+----------+-----------+-----------+------+----------+
 
 
@@ -179,10 +179,10 @@ ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopMo
 ST_1 : Operation 7 [1/1] (1.18ns)   --->   "br label %1" [CollatzHLS/CollatzC/Collatz.cpp:10]   --->   Operation 7 'br' <Predicate = true> <Delay = 1.18>
 
 State 2 <SV = 1> <Delay = 3.08>
-ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%aux_0 = phi i16 [ 65, %0 ], [ %aux_4, %loop ]"   --->   Operation 8 'phi' 'aux_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%aux_0 = phi i16 [ 3, %0 ], [ %aux_4, %_ifconv ]"   --->   Operation 8 'phi' 'aux_0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 9 [1/1] (1.42ns)   --->   "%icmp_ln10 = icmp eq i16 %aux_0, 1" [CollatzHLS/CollatzC/Collatz.cpp:10]   --->   Operation 9 'icmp' 'icmp_ln10' <Predicate = true> <Delay = 1.42> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.42> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 27, i64 27, i64 27)"   --->   Operation 10 'speclooptripcount' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 11 [1/1] (0.00ns)   --->   "br i1 %icmp_ln10, label %2, label %loop" [CollatzHLS/CollatzC/Collatz.cpp:10]   --->   Operation 11 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 7, i64 7, i64 7)"   --->   Operation 10 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "br i1 %icmp_ln10, label %2, label %_ifconv" [CollatzHLS/CollatzC/Collatz.cpp:10]   --->   Operation 11 'br' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%trunc_ln10 = trunc i16 %aux_0 to i1" [CollatzHLS/CollatzC/Collatz.cpp:10]   --->   Operation 12 'trunc' 'trunc_ln10' <Predicate = (!icmp_ln10)> <Delay = 0.00>
 ST_2 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([5 x i8]* @p_str) nounwind" [CollatzHLS/CollatzC/Collatz.cpp:10]   --->   Operation 13 'specloopname' <Predicate = (!icmp_ln10)> <Delay = 0.00>
 ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%aux = call i15 @_ssdm_op_PartSelect.i15.i16.i32.i32(i16 %aux_0, i32 1, i32 15)" [CollatzHLS/CollatzC/Collatz.cpp:12]   --->   Operation 14 'partselect' 'aux' <Predicate = (!icmp_ln10)> <Delay = 0.00>
@@ -192,8 +192,8 @@ ST_2 : Operation 17 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%sub_ln
 ST_2 : Operation 18 [1/1] (2.54ns) (root node of TernaryAdder)   --->   "%aux_2 = add i16 1, %sub_ln14" [CollatzHLS/CollatzC/Collatz.cpp:14]   --->   Operation 18 'add' 'aux_2' <Predicate = (!icmp_ln10)> <Delay = 2.54> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.27> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_2 : Operation 19 [1/1] (0.54ns)   --->   "%aux_4 = select i1 %trunc_ln10, i16 %aux_2, i16 %aux_1" [CollatzHLS/CollatzC/Collatz.cpp:11]   --->   Operation 19 'select' 'aux_4' <Predicate = (!icmp_ln10)> <Delay = 0.54> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.54> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_2 : Operation 20 [1/1] (0.00ns)   --->   "br label %1" [CollatzHLS/CollatzC/Collatz.cpp:10]   --->   Operation 20 'br' <Predicate = (!icmp_ln10)> <Delay = 0.00>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i8P(i8* %agg_result_steps, i8 -60)" [CollatzHLS/CollatzC/Collatz.cpp:21]   --->   Operation 21 'write' <Predicate = (icmp_ln10)> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i8P(i8* %agg_result_greatest, i8 27)" [CollatzHLS/CollatzC/Collatz.cpp:21]   --->   Operation 22 'write' <Predicate = (icmp_ln10)> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i8P(i8* %agg_result_steps, i8 16)" [CollatzHLS/CollatzC/Collatz.cpp:21]   --->   Operation 21 'write' <Predicate = (icmp_ln10)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "call void @_ssdm_op_Write.ap_auto.i8P(i8* %agg_result_greatest, i8 7)" [CollatzHLS/CollatzC/Collatz.cpp:21]   --->   Operation 22 'write' <Predicate = (icmp_ln10)> <Delay = 0.00>
 ST_2 : Operation 23 [1/1] (0.00ns)   --->   "ret void" [CollatzHLS/CollatzC/Collatz.cpp:22]   --->   Operation 23 'ret' <Predicate = (icmp_ln10)> <Delay = 0.00>
 
 
@@ -217,27 +217,27 @@ Port [ x]:  wired=1; compound=0; hidden=0; nouse=1; global=0; static=0; extern=0
 
 <LifeTime>
 <method=bitvector/>
-specbitsmap_ln0       (specbitsmap      ) [ 000]
-specbitsmap_ln0       (specbitsmap      ) [ 000]
-specbitsmap_ln0       (specbitsmap      ) [ 000]
-spectopmodule_ln0     (spectopmodule    ) [ 000]
-br_ln10               (br               ) [ 011]
-aux_0                 (phi              ) [ 001]
-icmp_ln10             (icmp             ) [ 001]
-speclooptripcount_ln0 (speclooptripcount) [ 000]
-br_ln10               (br               ) [ 000]
-trunc_ln10            (trunc            ) [ 000]
-specloopname_ln10     (specloopname     ) [ 000]
-aux                   (partselect       ) [ 000]
-aux_1                 (zext             ) [ 000]
-shl_ln14              (shl              ) [ 000]
-sub_ln14              (sub              ) [ 000]
-aux_2                 (add              ) [ 000]
-aux_4                 (select           ) [ 011]
-br_ln10               (br               ) [ 011]
-write_ln21            (write            ) [ 000]
-write_ln21            (write            ) [ 000]
-ret_ln22              (ret              ) [ 000]
+specbitsmap_ln0   (specbitsmap      ) [ 000]
+specbitsmap_ln0   (specbitsmap      ) [ 000]
+specbitsmap_ln0   (specbitsmap      ) [ 000]
+spectopmodule_ln0 (spectopmodule    ) [ 000]
+br_ln10           (br               ) [ 011]
+aux_0             (phi              ) [ 001]
+icmp_ln10         (icmp             ) [ 001]
+empty             (speclooptripcount) [ 000]
+br_ln10           (br               ) [ 000]
+trunc_ln10        (trunc            ) [ 000]
+specloopname_ln10 (specloopname     ) [ 000]
+aux               (partselect       ) [ 000]
+aux_1             (zext             ) [ 000]
+shl_ln14          (shl              ) [ 000]
+sub_ln14          (sub              ) [ 000]
+aux_2             (add              ) [ 000]
+aux_4             (select           ) [ 011]
+br_ln10           (br               ) [ 011]
+write_ln21        (write            ) [ 000]
+write_ln21        (write            ) [ 000]
+ret_ln22          (ret              ) [ 000]
 </LifeTime>
 
 <model>
@@ -418,7 +418,7 @@ ret_ln22              (ret              ) [ 000]
 <pin_list>
 <pin id="39" dir="0" index="0" bw="0" slack="0"/>
 <pin id="40" dir="0" index="1" bw="8" slack="0"/>
-<pin id="41" dir="0" index="2" bw="7" slack="0"/>
+<pin id="41" dir="0" index="2" bw="6" slack="0"/>
 <pin id="42" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -431,7 +431,7 @@ ret_ln22              (ret              ) [ 000]
 <pin_list>
 <pin id="47" dir="0" index="0" bw="0" slack="0"/>
 <pin id="48" dir="0" index="1" bw="8" slack="0"/>
-<pin id="49" dir="0" index="2" bw="6" slack="0"/>
+<pin id="49" dir="0" index="2" bw="4" slack="0"/>
 <pin id="50" dir="1" index="3" bw="0" slack="2147483647"/>
 </pin_list>
 <bind>
@@ -452,7 +452,7 @@ ret_ln22              (ret              ) [ 000]
 
 <comp id="58" class="1004" name="aux_0_phi_fu_58">
 <pin_list>
-<pin id="59" dir="0" index="0" bw="8" slack="1"/>
+<pin id="59" dir="0" index="0" bw="3" slack="1"/>
 <pin id="60" dir="0" index="1" bw="0" slack="2147483647"/>
 <pin id="61" dir="0" index="2" bw="16" slack="0"/>
 <pin id="62" dir="0" index="3" bw="0" slack="2147483647"/>

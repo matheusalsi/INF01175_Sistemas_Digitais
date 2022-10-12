@@ -5,13 +5,13 @@
           "functionName": "Collatz",
           "label": "loop",
           "functionLabel": "",
-          "pragma": {"name": "LOOP_TRIPCOUNT"}
+          "pragma": {"name": "LOOP_FLATTEN"}
         },
         {
           "functionName": "Collatz",
           "label": "loop",
           "functionLabel": "",
-          "pragma": {"name": "LOOP_FLATTEN"}
+          "pragma": {"name": "LOOP_MERGE"}
         }
       ]
     }]}

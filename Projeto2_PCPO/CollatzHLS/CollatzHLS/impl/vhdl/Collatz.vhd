@@ -28,7 +28,7 @@ end;
 architecture behav of Collatz is 
     attribute CORE_GENERATION_INFO : STRING;
     attribute CORE_GENERATION_INFO of behav : architecture is
-    "Collatz,hls_ip_2019_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7vx485t-ffg1157-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.087000,HLS_SYN_LAT=28,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=18,HLS_SYN_LUT=85,HLS_VERSION=2019_1}";
+    "Collatz,hls_ip_2019_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7vx485t-ffg1157-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.087000,HLS_SYN_LAT=8,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=18,HLS_SYN_LUT=85,HLS_VERSION=2019_1}";
     constant ap_const_logic_1 : STD_LOGIC := '1';
     constant ap_const_logic_0 : STD_LOGIC := '0';
     constant ap_ST_fsm_state1 : STD_LOGIC_VECTOR (1 downto 0) := "01";
@@ -36,10 +36,10 @@ architecture behav of Collatz is
     constant ap_const_lv32_0 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     constant ap_const_lv32_1 : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000001";
     constant ap_const_lv1_0 : STD_LOGIC_VECTOR (0 downto 0) := "0";
-    constant ap_const_lv16_41 : STD_LOGIC_VECTOR (15 downto 0) := "0000000001000001";
-    constant ap_const_lv8_C4 : STD_LOGIC_VECTOR (7 downto 0) := "11000100";
+    constant ap_const_lv16_3 : STD_LOGIC_VECTOR (15 downto 0) := "0000000000000011";
+    constant ap_const_lv8_10 : STD_LOGIC_VECTOR (7 downto 0) := "00010000";
     constant ap_const_lv1_1 : STD_LOGIC_VECTOR (0 downto 0) := "1";
-    constant ap_const_lv8_1B : STD_LOGIC_VECTOR (7 downto 0) := "00011011";
+    constant ap_const_lv8_7 : STD_LOGIC_VECTOR (7 downto 0) := "00000111";
     constant ap_const_lv16_1 : STD_LOGIC_VECTOR (15 downto 0) := "0000000000000001";
     constant ap_const_lv32_F : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000001111";
     constant ap_const_lv16_2 : STD_LOGIC_VECTOR (15 downto 0) := "0000000000000010";
@@ -87,7 +87,7 @@ begin
             if (((icmp_ln10_fu_65_p2 = ap_const_lv1_0) and (ap_const_logic_1 = ap_CS_fsm_state2))) then 
                 aux_0_reg_54 <= aux_4_fu_107_p3;
             elsif (((ap_start = ap_const_logic_1) and (ap_const_logic_1 = ap_CS_fsm_state1))) then 
-                aux_0_reg_54 <= ap_const_lv16_41;
+                aux_0_reg_54 <= ap_const_lv16_3;
             end if; 
         end if;
     end process;
@@ -111,7 +111,7 @@ begin
                 ap_NS_fsm <= "XX";
         end case;
     end process;
-    agg_result_greatest <= ap_const_lv8_1B;
+    agg_result_greatest <= ap_const_lv8_7;
 
     agg_result_greatest_ap_vld_assign_proc : process(ap_CS_fsm_state2, icmp_ln10_fu_65_p2)
     begin
@@ -122,7 +122,7 @@ begin
         end if; 
     end process;
 
-    agg_result_steps <= ap_const_lv8_C4;
+    agg_result_steps <= ap_const_lv8_10;
 
     agg_result_steps_ap_vld_assign_proc : process(ap_CS_fsm_state2, icmp_ln10_fu_65_p2)
     begin

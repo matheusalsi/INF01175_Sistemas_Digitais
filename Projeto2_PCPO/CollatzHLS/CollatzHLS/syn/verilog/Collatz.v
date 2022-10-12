@@ -7,7 +7,7 @@
 
 `timescale 1 ns / 1 ps 
 
-(* CORE_GENERATION_INFO="Collatz,hls_ip_2019_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7vx485t-ffg1157-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.087000,HLS_SYN_LAT=28,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=18,HLS_SYN_LUT=85,HLS_VERSION=2019_1}" *)
+(* CORE_GENERATION_INFO="Collatz,hls_ip_2019_1,{HLS_INPUT_TYPE=cxx,HLS_INPUT_FLOAT=0,HLS_INPUT_FIXED=0,HLS_INPUT_PART=xc7vx485t-ffg1157-1,HLS_INPUT_CLOCK=10.000000,HLS_INPUT_ARCH=others,HLS_SYN_CLOCK=3.087000,HLS_SYN_LAT=8,HLS_SYN_TPT=none,HLS_SYN_MEM=0,HLS_SYN_DSP=0,HLS_SYN_FF=18,HLS_SYN_LUT=85,HLS_VERSION=2019_1}" *)
 
 module Collatz (
         ap_clk,
@@ -75,7 +75,7 @@ always @ (posedge ap_clk) begin
     if (((icmp_ln10_fu_65_p2 == 1'd0) & (1'b1 == ap_CS_fsm_state2))) begin
         aux_0_reg_54 <= aux_4_fu_107_p3;
     end else if (((ap_start == 1'b1) & (1'b1 == ap_CS_fsm_state1))) begin
-        aux_0_reg_54 <= 16'd65;
+        aux_0_reg_54 <= 16'd3;
     end
 end
 
@@ -141,9 +141,9 @@ always @ (*) begin
     endcase
 end
 
-assign agg_result_greatest = 8'd27;
+assign agg_result_greatest = 8'd7;
 
-assign agg_result_steps = 8'd196;
+assign agg_result_steps = 8'd16;
 
 assign ap_CS_fsm_state1 = ap_CS_fsm[32'd0];
 

@@ -1,0 +1,1 @@
+-wto "f564c5a4b0574469a1ead02e74270189" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "tb_Collatz_VHDL_behav" "xil_defaultlib.tb_Collatz_VHDL" -log "elaborate.log" 
